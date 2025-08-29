@@ -1,4 +1,4 @@
-## Hi there 👋
+フルスタックおじさんになりたいの(なれない)
 
 <!--
 **Moge800/Moge800** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
