@@ -1,50 +1,59 @@
-# Hi, I'm Moge800 👋
+# Moge800
 
-個人開発で、**Python中心の実用ツール**を作っています。  
-領域は **IoT / 画像処理 / OCR / LLMバックエンド / 運用自動化**。
+Pythonを中心に、日常業務や運用で使える小さなツールを作っています。  
+主な関心領域は **PLC / IoT / 画像処理 / OCR / LLMバックエンド / 運用自動化** です。
 
-## Focus Areas
+## Focus
 
-- Raspberry Pi・M5系デバイス向けのアプリ/運用
-- カメラ・異常検知・画像処理パイプライン
-- OCR/検索/API化など、業務で使えるバックエンド
-- 小さく作って素早く回す自動化ツール
+- Raspberry Pi / Pico / M5Stackを使った小型デバイス向けアプリケーション
+- Pico / M5Stackを使ったPLC連携・遠隔操作まわりの組み込み制御
+- PLC / MC Protocol まわりの通信ツール
+- カメラ、異常検知、画像処理まわりの検証と実装
+- OCR、検索、API化などのバックエンド
+- 運用を楽にする自動化ツール
 
-## Selected Repositories
+## Selected Work
 
-- [rpi_digital_signage](https://github.com/Moge800/rpi_digital_signage)  
-  Raspberry Pi向けデジタルサイネージ
+公開しているものの中から、最近触っている領域に近いものを中心に載せています。
 
-- [PatchcoreBackend](https://github.com/Moge800/PatchcoreBackend) / [patchcore-inspection](https://github.com/Moge800/patchcore-inspection)  
-  PatchCore系の異常検知バックエンド/検証
+- **PLC / Factory Automation**
+  - [gomcprotocol](https://github.com/Moge800/gomcprotocol)  
+    三菱電機PLCのMC Protocol通信を扱うGoライブラリ
+  - [gomc-rest](https://github.com/Moge800/gomc-rest)  
+    MC Protocol通信をHTTP APIとして扱うためのRESTサーバー
+  - [micromcprotocol](https://github.com/Moge800/micromcprotocol)  
+    ESP32 / Raspberry Pi Pico W向けの軽量MC Protocolクライアント
+  - [plc_trigger_recorder](https://github.com/Moge800/plc_trigger_recorder) / [plc_trigger_cam](https://github.com/Moge800/plc_trigger_cam)  
+    PLCのビット変化をトリガーに、カメラ録画・撮影を行うGUIツール
 
-- [faiss-knowledge-search](https://github.com/Moge800/faiss-knowledge-search)  
-  FAISSベースのナレッジ検索
+- **Vision / Inspection**
+  - [PatchcoreBackend](https://github.com/Moge800/PatchcoreBackend) / [patchcore-inspection](https://github.com/Moge800/patchcore-inspection)  
+    PatchCore系の異常検知バックエンドと検証用ツール
+  - [yolox_wrapper](https://github.com/Moge800/yolox_wrapper)  
+    YOLOXまわりの検証・利用をしやすくするためのラッパー
 
-- [ocr_web_api](https://github.com/Moge800/ocr_web_api)  
-  OCRのWeb API化
+- **Search / OCR / LLM Backend**
+  - [faiss-knowledge-search](https://github.com/Moge800/faiss-knowledge-search)  
+    FAISSベースのナレッジ検索
+  - [ocr_web_api](https://github.com/Moge800/ocr_web_api)  
+    OCR処理をWeb APIとして扱うためのバックエンド
+  - [llm_query_backend](https://github.com/Moge800/llm_query_backend) / [llm_backend](https://github.com/Moge800/llm_backend)  
+    LLM連携まわりのバックエンド実装
 
-- [llm_query_backend](https://github.com/Moge800/llm_query_backend) / [llm_backend](https://github.com/Moge800/llm_backend)  
-  LLM連携バックエンド
+## Current Interests
 
-- [M5PaperS3_Calculator](https://github.com/Moge800/M5PaperS3_Calculator)  
-  M5PaperS3向けアプリ
-
-## Recent Direction
-
-- Discord/OpenClaw運用の整備
-- 既存リポジトリのREADME改善
-- プロトタイプを実運用できる形に整える
+- Discord / OpenClaw まわりの運用整備
+- 現場寄りツールを使いやすく残せる形に整えること
+- プロトタイプを継続して使える形に整えること
 
 ## Tech Stack
 
 - **Main**: Python
-- **Also**: Rust, C#, JavaScript
-- **Platform**: Linux, Raspberry Pi, self-hosted
+- **Device / Embedded**: MicroPython, C++
+- **Also exploring**: Go, Rust, C#, JavaScript
+- **Platform**: Linux, Raspberry Pi, Raspberry Pi Pico, M5Stack, self-hosted
 
 ## Notes
 
-いまは各リポジトリの説明文・READMEを順次メンテ中です。  
-興味あるものがあれば Issues で気軽にどうぞ。
-
-> OpenClawが上記文章を生成しました(笑)
+各リポジトリの説明文やREADMEを少しずつ整理しています。  
+気になるものがあれば、IssueやDiscussionで声をかけてもらえるとうれしいです。
