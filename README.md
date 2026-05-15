@@ -24,6 +24,8 @@
     三菱電機PLCのMC Protocol通信を扱うGoライブラリ
   - [gomc-rest](https://github.com/Moge800/gomc-rest)  
     測定機や周辺システムからPLCへデータを書き込むためのREST APIサーバー
+  - [gomc_rest_client](https://github.com/Moge800/gomc_rest_client)
+    gomc-restのHTTP APIをPythonから扱うためのクライアントライブラリ
   - [micromcprotocol](https://github.com/Moge800/micromcprotocol)  
     ESP32 / Raspberry Pi Pico W向けの軽量MC Protocolクライアント
   - [plc_trigger_recorder](https://github.com/Moge800/plc_trigger_recorder) / [plc_trigger_cam](https://github.com/Moge800/plc_trigger_cam)  
